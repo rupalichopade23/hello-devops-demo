@@ -1,0 +1,13 @@
+<h2>Angular + FastAPI + PostgreSQL Demo</h2>
+
+<input type="text" [(ngModel)]="name" placeholder="Enter your name" />
+
+<button type="button" (click)="sayHello()">Submit</button>
+
+<p>{{ message }}</p>
+
+<h3>Recent Names</h3>
+
+<ul>
+  <li *ngFor="let n of names">{{ n }}</li>
+</ul>
